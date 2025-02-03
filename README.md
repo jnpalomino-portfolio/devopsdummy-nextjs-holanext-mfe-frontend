@@ -1,20 +1,33 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# **APLICACIÓN DUMMY - HELLO WORLD (NextJS)**
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+# Descripción del proyecto
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+Este proyecto dummy consiste en una aplicación FrontEnd contenerizada desarrollada en NextJS. 
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+## Objetivo
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+El objetivo principal de este proyecto es proporcionar un entorno de prueba para el equipo DevOps. Se utiliza para realizar pruebas de los templates desarrollados en el repositorio ‘devops-pipeline-cicd’. Estas pruebas incluyen:
+
+- Compilación de código.
+- Ejecución de pruebas unitarias.
+- Despliegue de imágenes a un container registry.
+- Despliegue de la aplicación en OpenShift.
+
+Este proyecto sirve como un sandbox donde el equipo DevOps puede experimentar y validar el funcionamiento de los flujos de trabajo y plantillas de CI/CD desarrollados para implementaciones más complejas.
+
+---
+
+# Implementación en local de aplicación Dummy
+Con el objetivo de desplegar localmente la aplicación Dummy se requieren las siguientes tecnologías.
+
+## Tecnologías necesarias
+- git
+- DockerDesktop
+
+## Pasos de instalación en local
+1. Abrir DockerDesktop.
+2. Clonar el repositorio.
+3. Ingresar a la carpeta raíz del proyecto en una terminal.
+4. Ejecutar el comando `docker build -t dummy-next:latest .` para realizar la cosntrucción de la imagen.
+5. Ejecutar el comando `docker run -p 8010:8010 dummy-next:latest` para la construcción del contenedor en base a la imagen generada anteriormente.
+6. Ingresar por el navegador a la URL http://localhost:8010/ para ver el proyecto ejecutarse en local.
